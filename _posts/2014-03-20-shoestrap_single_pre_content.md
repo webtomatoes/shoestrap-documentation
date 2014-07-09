@@ -19,7 +19,7 @@ function custom_content_shoestrap_single_pre_content() {
 	echo '<p>The content will be located AFTER the title.</p>';
 
 }
-add_action( 'shoestrap_single_pre_content', 'custom_content_shoestrap_single_top' );
+add_action( 'shoestrap_single_pre_content', 'custom_content_shoestrap_single_pre_content' );
 
 ?>
 ```
