@@ -13,13 +13,13 @@ This action can be used to add content on single posts, right after `the_content
 <?php
 
 // Insert content using the 'shoestrap_single_after_content' action.
-function custom_content_shoestrap_single_pre_content() {
+function custom_content_shoestrap_single_after_content() {
 
 	echo '<p>This content will be added on all posts.</p>';
 	echo '<p>The content will be located AFTER the main post content.</p>';
 
 }
-add_action( 'shoestrap_single_after_content', 'custom_content_shoestrap_single_top' );
+add_action( 'shoestrap_single_after_content', 'custom_content_shoestrap_single_after_content' );
 
 ?>
 ```
